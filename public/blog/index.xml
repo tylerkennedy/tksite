@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on Tyler Kennedy</title>
+    <link>https://tylerkennedy.co/blog/</link>
+    <description>Recent content in Blog on Tyler Kennedy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 29 Jan 2021 22:42:11 -0500</lastBuildDate><atom:link href="https://tylerkennedy.co/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Build a Website for Your iOS App With Carrd</title>
+      <link>https://tylerkennedy.co/blog/how-to-build-a-website-for-your-ios-app-with-carrd/</link>
+      <pubDate>Mon, 22 Aug 2022 20:42:24 -0400</pubDate>
+      
+      <guid>https://tylerkennedy.co/blog/how-to-build-a-website-for-your-ios-app-with-carrd/</guid>
+      <description>Creating a website for your iOS app is an easy way to start promoting your app online. There are tons of ways you can use your website to promote your app.
+A website is also a great way to drive traffic to your App Store listing. This helps generate more traffic which leads to more revenue.
+More Traffic ➡️ More Downloads ➡️ More Sales 🤑
+Your website is even a great place to provide resources for your customers.</description>
+    </item>
+    
+  </channel>
+</rss>

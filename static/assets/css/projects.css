@@ -1,0 +1,66 @@
+.projects-container {
+
+}
+
+.project {
+  width: 100%;
+  border-radius: 12px;
+  padding: 4px;
+  margin: 20px 0px;
+}
+
+.project-inner {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.project > .project-inner > a {
+  display: flex;
+  align-items: center;
+}
+
+.project > .project-inner > a > div:hover {
+  text-decoration: underline;
+}
+
+.project > .project-inner > a > .icon {
+  font-size: 1.5rem;
+  width: 50px;
+}
+
+.cta-button {
+  border-radius: 20px;
+  width: 150px;
+  padding: 4px 16px;
+  color: white;
+}
+
+.cta-button > i:hover {
+  text-decoration: none !important;
+}
+
+h2 {
+  margin: 8px 0px !important;
+}
+
+.post-content a {
+  box-shadow: none;
+}
+
+#dont-text {
+  /* background-color: #1CD61D; */
+  background-image: linear-gradient(270deg, #1CD61D 0%, rgba(28, 214, 29, 0.5) 100%);
+}
+
+#dont-text .cta-button {
+  background-color: #1CD61D;
+}
+
+#figment {
+background-image: linear-gradient(270deg, rgb(0, 102, 255) 0%, rgb(0, 137, 255) 100%);;
+}
+
+#figment .cta-button {
+  background-color: #0066ff;;
+}

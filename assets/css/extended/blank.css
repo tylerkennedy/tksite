@@ -1,0 +1,49 @@
+/*
+This is just a placeholder blank stylesheet so as to support adding custom styles budled with theme's default styles
+
+Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-css-with-themes-assets for more info
+*/
+.menu {
+  margin: 0 8px !important;
+}
+
+.menu > li > a {
+  padding: 0px 16px;
+}
+
+.menu > li > a:hover {
+  background-color: var(--border);
+  border-radius: 12px;
+}
+
+.menu li+li {
+  margin-inline-start: auto; /* Remove gap between menu items */
+}
+
+.menu .active {
+    font-weight: 700;
+    border-bottom: none !important;
+}
+
+.pagination a {
+  background-color: #1CD61D;
+}
+
+.logo a {
+  border-bottom: none !important;
+  color: var(--primary);
+}
+
+.nav {
+  padding: var(--gap);
+  justify-content: center;
+}
+
+.first-entry {
+  min-height: unset;
+}
+
+.first-entry .entry-header h2 {
+  font-size: 45px;
+  font-weight: 800;
+}

@@ -1,0 +1,53 @@
+baseURL = "https://tylerkennedy.co/"
+languageCode = "en-us"
+title = "Tyler Kennedy"
+theme = "PaperMod"
+paginate = 5
+enableEmoji = true
+
+disableKinds = ["taxonomy", "term"]
+[taxonomies]
+    category = "categories"
+    tag = "tags"
+
+[params]
+  homeText = "You just made a Hugo blog from scratch."
+  defaultTheme = "light"
+  disableThemeToggle = true
+  ShowShareButtons = true
+  ShowReadingTime = true
+  env = "production"
+  ShowPostNavLinks = true
+  disableScrollToTop = true
+
+
+[params.homeInfoParams]
+enabled = true
+title = "Tyler Kennedy"
+
+
+content = "I build software (iOS apps, web apps, and chrome extensions) and share my experiences here on my blog."
+
+[[menu.main]]
+identifier = "Home"
+name = "Home"
+url = "/"
+weight = 10
+
+[[menu.main]]
+identifier = "Projects"
+name = "Projects"
+url = "/projects/"
+weight = 20
+
+[[menu.main]]
+identifier = "Contact"
+name = "Contact"
+url = "/contact/"
+weight = 30
+
+[[menu.main]]
+identifier = "Blog"
+name = "Blog"
+url = "/blog/"
+weight = 50

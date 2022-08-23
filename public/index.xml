@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tyler Kennedy</title>
+    <link>https://tylerkennedy.co/</link>
+    <description>Recent content on Tyler Kennedy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 22 Aug 2022 20:42:24 -0400</lastBuildDate><atom:link href="https://tylerkennedy.co/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Build a Website for Your iOS App With Carrd</title>
+      <link>https://tylerkennedy.co/blog/how-to-build-a-website-for-your-ios-app-with-carrd/</link>
+      <pubDate>Mon, 22 Aug 2022 20:42:24 -0400</pubDate>
+      
+      <guid>https://tylerkennedy.co/blog/how-to-build-a-website-for-your-ios-app-with-carrd/</guid>
+      <description>Creating a website for your iOS app is an easy way to start promoting your app online. There are tons of ways you can use your website to promote your app.
+A website is also a great way to drive traffic to your App Store listing. This helps generate more traffic which leads to more revenue.
+More Traffic ➡️ More Downloads ➡️ More Sales 🤑
+Your website is even a great place to provide resources for your customers.</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://tylerkennedy.co/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tylerkennedy.co/contact/</guid>
+      <description>form { width: 100%; } input { width: 100%; padding: 10px; margin: 14px 0; padding-inline-start: var(--radius); overflow-x: hidden; border-radius: var(--radius); background: var(--code-bg); color: var(--primary); border: 1px solid var(--border); } textarea { width: 100%; height: 200px; padding: 10px; margin: 14px 0; padding-inline-start: var(--radius); border-radius: var(--radius); background: var(--code-bg); color: var(--primary); border: 1px solid var(--border); }  Send me a message to get in touch about any of my projects or hiring me to help build your next project</description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>https://tylerkennedy.co/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tylerkennedy.co/projects/</guid>
+      <description>   Dont Text  Block spam texts on your iPhone with the Dont Text iOS app
+Check it out      Figment.so  Create a Website from any Figma Design
+Check it out     </description>
+    </item>
+    
+  </channel>
+</rss>
