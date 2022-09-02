@@ -6,16 +6,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>Blog | Tyler Kennedy</title>
-
-<meta name="keywords" content="" />
-
+<meta name="keywords" content="">
 <meta name="description" content="Tyler Kennedy&#39;s Blog - Read my latest posts about building software products">
 <meta name="author" content="">
-<link rel="canonical" href="https://tylerkennedy.co/blog/" />
-
-<link href="/assets/css/custom-theme.css" rel="stylesheet"><link href="/assets/css/stylesheet.min.c5766e11d8335866570719f19e4e2ca132102e80932ca5a222910b098c2bb512.css" integrity="sha256-xXZuEdgzWGZXBxnxnk4soTIQLoCTLKWiIpELCYwrtRI=" rel="preload stylesheet"
-    as="style">
-
+<link rel="canonical" href="https://tylerkennedy.co/blog/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.74c3400412f2e28d3ebb01641dc4e97ce8719d7a9cd83e2e2c3398f72c47c64c.css" integrity="sha256-dMNABBLy4o0&#43;uwFkHcTpfOhxnXqc2D4uLDOY9yxHxkw=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://tylerkennedy.co/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://tylerkennedy.co/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://tylerkennedy.co/favicon-32x32.png">
@@ -23,17 +18,23 @@
 <link rel="mask-icon" href="https://tylerkennedy.co/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<meta name="generator" content="Hugo 0.85.0" />
-<link rel="alternate" type="application/rss&#43;xml" href="https://tylerkennedy.co/blog/index.xml">
+<link rel="alternate" type="application/rss+xml" href="https://tylerkennedy.co/blog/index.xml">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
 
 
-
-<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "6addec59258a47688cd966c7c1cf0f0d"}'></script>
-<meta property="og:title" content="Blog" />
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "b69d0f4526ff4bcaa7e9f0e3b78e37d7"}'></script><meta property="og:title" content="Blog" />
 <meta property="og:description" content="Tyler Kennedy&#39;s Blog - Read my latest posts about building software products" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://tylerkennedy.co/blog/" />
-<meta property="og:updated_time" content="2021-01-29T22:42:11-05:00" />
+
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:image" content="https://donttext.app/assets/images/Icon-120.png"/>
 <meta name="twitter:site" content="@tknndy"/>
@@ -41,10 +42,15 @@
 <meta name="twitter:description" content="Tyler Kennedy&#39;s Blog - Read my latest posts about building software products"/>
 
 
-
 </head>
 
 <body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    }
+
+</script>
 <noscript>
     <style type="text/css">
         .theme-toggle,
@@ -56,31 +62,40 @@
 </noscript>
 <header class="header">
     <nav class="nav">
+      <div class="logo">
+        <a href="https://tylerkennedy.co" accesskey="h" title="Tyler Kennedy (Alt + H)">Tyler Kennedy</a>
+        <div class="logo-switches">
+            <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+                <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+            </button>
+        </div>
+    </div>
         <ul class="menu" id="menu" onscroll="menu_on_scroll()">
-            <li>
-                <a href="https://tylerkennedy.co/" title="Home">
-                    <span>Home</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://tylerkennedy.co/projects/" title="Projects">
-                    <span>Projects</span>
-                </a>
-            </li>
             <li>
                 <a href="https://tylerkennedy.co/contact/" title="Contact">
                     <span>Contact</span>
                 </a>
-            </li>
-            <li>
-                <a href="https://tylerkennedy.co/blog/" title="Blog">
-                    <span class="active">Blog</span>
-                </a>
             </li></ul>
     </nav>
 </header>
-
-    <main class="main"> 
+<main class="main"> 
 <header class="page-header">
   <h1>Blog</h1>
   
@@ -89,9 +104,8 @@
 
 
 <article class="post-entry"> 
-<figure class="entry-cover"><img src="https://tylerkennedy.co/assets/images/blog-covers/carrd.png" alt="How to Build a Website for Your iOS App With Carrd">
+<figure class="entry-cover"><img loading="lazy" src="https://tylerkennedy.co/assets/images/blog-covers/carrd.png" alt="How to Build a Website for Your iOS App With Carrd">
 </figure>
-
   <header class="entry-header">
     <h2>
       How to Build a Website for Your iOS App With Carrd
@@ -103,16 +117,14 @@ A website is also a great way to drive traffic to your App Store listing. This h
 More Traffic ➡️ More Downloads ➡️ More Sales 🤑
 Your website is even a great place to provide resources for your customers....</p>
   </section>
-  <footer class="entry-footer">
-
-August 22, 2022&nbsp;·&nbsp;6 min&nbsp;·&nbsp;Tyler Kennedy
-</footer>
+  <footer class="entry-footer"><span title='2022-08-22 20:42:24 -0400 EDT'>August 22, 2022</span>&nbsp;·&nbsp;6 min&nbsp;·&nbsp;Tyler Kennedy</footer>
   <a class="entry-link" aria-label="post link to How to Build a Website for Your iOS App With Carrd" href="https://tylerkennedy.co/blog/how-to-build-a-website-for-your-ios-app-with-carrd/"></a>
 </article>
 
-    </main><link href="/assets/icomoon/style.css" rel="stylesheet">
+    </main>
+    <link href="/assets/icomoon/style.css" rel="stylesheet">
 <footer class="footer">
-    <span>&copy; 2022 <a href="https://tylerkennedy.co/">Tyler Kennedy</a></span>
+    <span>&copy; 2022 <a href="https://tylerkennedy.co">Tyler Kennedy</a></span>
 </footer>
 
 
@@ -157,7 +169,18 @@ August 22, 2022&nbsp;·&nbsp;6 min&nbsp;·&nbsp;Tyler Kennedy
     }
 
 </script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
+</script>
 </body>
 
 </html>

@@ -6,19 +6,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>How to Build a Website for Your iOS App With Carrd | Tyler Kennedy</title>
-
-<meta name="keywords" content="" />
-
+<meta name="keywords" content="">
 <meta name="description" content="Creating a website for your iOS app is an easy way to start promoting your app online. There are tons of ways you can use your website to promote your app.
 A website is also a great way to drive traffic to your App Store listing. This helps generate more traffic which leads to more revenue.
 More Traffic ➡️ More Downloads ➡️ More Sales 🤑
 Your website is even a great place to provide resources for your customers.">
 <meta name="author" content="Tyler Kennedy">
-<link rel="canonical" href="https://tylerkennedy.co/blog/how-to-build-a-website-for-your-ios-app-with-carrd/" />
-
-<link href="/assets/css/custom-theme.css" rel="stylesheet"><link href="/assets/css/stylesheet.min.c5766e11d8335866570719f19e4e2ca132102e80932ca5a222910b098c2bb512.css" integrity="sha256-xXZuEdgzWGZXBxnxnk4soTIQLoCTLKWiIpELCYwrtRI=" rel="preload stylesheet"
-    as="style">
-
+<link rel="canonical" href="https://tylerkennedy.co/blog/how-to-build-a-website-for-your-ios-app-with-carrd/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.74c3400412f2e28d3ebb01641dc4e97ce8719d7a9cd83e2e2c3398f72c47c64c.css" integrity="sha256-dMNABBLy4o0&#43;uwFkHcTpfOhxnXqc2D4uLDOY9yxHxkw=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="https://tylerkennedy.co/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://tylerkennedy.co/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://tylerkennedy.co/favicon-32x32.png">
@@ -26,20 +23,28 @@ Your website is even a great place to provide resources for your customers.">
 <link rel="mask-icon" href="https://tylerkennedy.co/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<meta name="generator" content="Hugo 0.85.0" />
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
 
 
-
-<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "6addec59258a47688cd966c7c1cf0f0d"}'></script>
-<meta property="og:title" content="How to Build a Website for Your iOS App With Carrd" />
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "b69d0f4526ff4bcaa7e9f0e3b78e37d7"}'></script><meta property="og:title" content="How to Build a Website for Your iOS App With Carrd" />
 <meta property="og:description" content="Creating a website for your iOS app is an easy way to start promoting your app online. There are tons of ways you can use your website to promote your app.
 A website is also a great way to drive traffic to your App Store listing. This helps generate more traffic which leads to more revenue.
 More Traffic ➡️ More Downloads ➡️ More Sales 🤑
 Your website is even a great place to provide resources for your customers." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://tylerkennedy.co/blog/how-to-build-a-website-for-your-ios-app-with-carrd/" />
-<meta property="og:image" content="https://tylerkennedy.co/assets/images/blog-covers/carrd.png" /><meta property="article:published_time" content="2022-08-22T20:42:24-04:00" />
+<meta property="og:image" content="https://tylerkennedy.co/assets/images/blog-covers/carrd.png" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2022-08-22T20:42:24-04:00" />
 <meta property="article:modified_time" content="2022-08-22T20:42:24-04:00" />
+
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://tylerkennedy.co/assets/images/blog-covers/carrd.png" />
 <meta name="twitter:title" content="How to Build a Website for Your iOS App With Carrd"/>
@@ -83,10 +88,15 @@ Your website is even a great place to provide resources for your customers."/>
 </script>
 
 
-
 </head>
 
 <body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    }
+
+</script>
 <noscript>
     <style type="text/css">
         .theme-toggle,
@@ -98,31 +108,40 @@ Your website is even a great place to provide resources for your customers."/>
 </noscript>
 <header class="header">
     <nav class="nav">
+      <div class="logo">
+        <a href="https://tylerkennedy.co" accesskey="h" title="Tyler Kennedy (Alt + H)">Tyler Kennedy</a>
+        <div class="logo-switches">
+            <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+                <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+            </button>
+        </div>
+    </div>
         <ul class="menu" id="menu" onscroll="menu_on_scroll()">
-            <li>
-                <a href="https://tylerkennedy.co/" title="Home">
-                    <span>Home</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://tylerkennedy.co/projects/" title="Projects">
-                    <span>Projects</span>
-                </a>
-            </li>
             <li>
                 <a href="https://tylerkennedy.co/contact/" title="Contact">
                     <span>Contact</span>
                 </a>
-            </li>
-            <li>
-                <a href="https://tylerkennedy.co/blog/" title="Blog">
-                    <span>Blog</span>
-                </a>
             </li></ul>
     </nav>
 </header>
-
-    <main class="main">
+<main class="main">
 
 <article class="post-single">
   <header class="post-header">
@@ -130,18 +149,13 @@ Your website is even a great place to provide resources for your customers."/>
       How to Build a Website for Your iOS App With Carrd
     </h1>
     
-    <div class="post-meta">
-
-August 22, 2022&nbsp;·&nbsp;6 min&nbsp;·&nbsp;Tyler Kennedy
-
+    <div class="post-meta"><span title='2022-08-22 20:42:24 -0400 EDT'>August 22, 2022</span>&nbsp;·&nbsp;6 min&nbsp;·&nbsp;Tyler Kennedy
     </div>
   </header> 
-<figure class="entry-cover"><img src="https://tylerkennedy.co/assets/images/blog-covers/carrd.png" alt="How to Build a Website for Your iOS App With Carrd">
+<figure class="entry-cover"><img loading="lazy" src="https://tylerkennedy.co/assets/images/blog-covers/carrd.png" alt="How to Build a Website for Your iOS App With Carrd">
         
 </figure>
-
-  <div class="post-content">
-<p>Creating a website for your iOS app is an easy way to start promoting your app online. There are tons of ways you can use your website to promote your app.</p>
+  <div class="post-content"><p>Creating a website for your iOS app is an easy way to start promoting your app online. There are tons of ways you can use your website to promote your app.</p>
 <p>A website is also a great way to drive traffic to your App Store listing. This helps generate more traffic which leads to more revenue.</p>
 <p><strong>More Traffic ➡️ More Downloads ➡️ More Sales 🤑</strong></p>
 <p>Your website is even a great place to provide resources for your customers. With a website, you can answer frequently asked questions, provide ways to get in touch for app support, and share in depth write-ups on your latest features.</p>
@@ -151,7 +165,8 @@ August 22, 2022&nbsp;·&nbsp;6 min&nbsp;·&nbsp;Tyler Kennedy
 <p><a href="https://try.carrd.co/1zf1rsmd">Carrd</a> is the easiest to use website builder on the internet. Carrd is designed to make building a website simple and quick. After you spend just a few minutes using the platform, you can launch a brand new website.</p>
 <p>Below are a few reasons that make Carrd the ideal choice for building a landing page for your iOS app if you want to create something simple and fast.</p>
 <h3 id="easy-setup-maintenance-and-publishing">Easy Setup, Maintenance, and Publishing<a hidden class="anchor" aria-hidden="true" href="#easy-setup-maintenance-and-publishing">#</a></h3>
-<p><img src="/assets/images/carrd-editor.png#center" alt="Carrd Website Builder" title="Carrd Website Builder"></p>
+<p><img loading="lazy" src="/assets/images/carrd-editor.png#center" alt="Carrd Website Builder"  title="Carrd Website Builder"  />
+</p>
 <p>The main reason to use Carrd over any other website builder is how easy it is to use.</p>
 <p>Carrd focuses on simplicity. So, while you may not be able to do as much with Carrd as other tools, you will find that Carrd is <em>almost</em> idiot-proof.</p>
 <p>Adding content to your site is easy because all elements are drag-and-drop onto the screen. You can customize the look and feel of your site by changing fonts, colors, and sizing of any element.</p>
@@ -159,7 +174,8 @@ August 22, 2022&nbsp;·&nbsp;6 min&nbsp;·&nbsp;Tyler Kennedy
 <p>And publishing is as easy as clicking save and choosing where you want your site to be available.</p>
 <p>Of course, Carrd also has easy-to-read and<a href="https://carrd.co/docs"> helpful guides</a> to using their platform.</p>
 <h3 id="templates">Templates<a hidden class="anchor" aria-hidden="true" href="#templates">#</a></h3>
-<p><img src="/assets/images/carrd-templates-1.png#center" alt="Carrd Templates" title="Carrd Templates"></p>
+<p><img loading="lazy" src="/assets/images/carrd-templates-1.png#center" alt="Carrd Templates"  title="Carrd Templates"  />
+</p>
 <p>There are hundreds of templates available to use with Carrd. Templates make it even easier to build your website because you can skip the daunting task of designing your landing page from scratch.</p>
 <p>With a template, you start with a pre-filled canvas that you can customize to fit your liking. You can easily change the colors and font or swap out images and text with your app name and icon.</p>
 <p>Using templates with Carrd will save you tons of time building your new website and make it easy to get a cool and clean design.</p>
@@ -172,7 +188,8 @@ August 22, 2022&nbsp;·&nbsp;6 min&nbsp;·&nbsp;Tyler Kennedy
 <h3 id="1-choose-a-template-or-start-from-scratch">1. Choose a Template or Start from Scratch<a hidden class="anchor" aria-hidden="true" href="#1-choose-a-template-or-start-from-scratch">#</a></h3>
 <p>One nice feature of Carrd is that you can build your website without creating an account.</p>
 <p>To start building your site, <a href="https://try.carrd.co/1zf1rsmd">visit Carrd</a> to get started. If you already have an account, login and click &lsquo;New Site&rsquo; to create a new website.</p>
-<p><img src="/assets/images/carrd-templates-2.png#center" alt="Carrd Templates" title="Carrd Templates"></p>
+<p><img loading="lazy" src="/assets/images/carrd-templates-2.png#center" alt="Carrd Templates"  title="Carrd Templates"  />
+</p>
 <p>This is where the fun part starts. You can now choose from tons of different templates to give you a starting place. Using these templates will save you time and help you find a nice design if designing is not your strong suit.</p>
 <p>If you are feeling a bit more creative or have a specific design in mind, you can skip using a template and start with a blank canvas.</p>
 <h3 id="2-add-your-content">2. Add Your Content<a hidden class="anchor" aria-hidden="true" href="#2-add-your-content">#</a></h3>
@@ -183,7 +200,8 @@ August 22, 2022&nbsp;·&nbsp;6 min&nbsp;·&nbsp;Tyler Kennedy
 <p>If you want more elements on your page, click the plus icon in the menu bar to add a new element. Select an element from the side menu and drag it onto the page to keep customizing. You can also drag elements already on the page to reorganize.</p>
 <p>Carrd is easy to use and you will learn how to use it quickly. Spend some time playing around with the editor and design your website for your app!</p>
 <h3 id="3-publish-your-apps-new-landing-page">3. Publish Your App&rsquo;s New Landing Page<a hidden class="anchor" aria-hidden="true" href="#3-publish-your-apps-new-landing-page">#</a></h3>
-<p><img src="/assets/images/carrd-publish.png#center" alt="Publish Your Carrd Website" title="Publish Your Carrd Website"></p>
+<p><img loading="lazy" src="/assets/images/carrd-publish.png#center" alt="Publish Your Carrd Website"  title="Publish Your Carrd Website"  />
+</p>
 <p>When you are done perfecting your website, it is time to publish it! Just like everything else, Carrd makes this quick and painless.</p>
 <p>When you are ready to publish, click the save icon on the toolbar. If you are not logged or didn&rsquo;t create an account yet, you&rsquo;ll need to do that now.</p>
 <p>Then, choose a title and a description for your website. Next, choose where you want to publish your website.</p>
@@ -223,9 +241,10 @@ August 22, 2022&nbsp;·&nbsp;6 min&nbsp;·&nbsp;Tyler Kennedy
 
   </footer>
 </article>
-    </main><link href="/assets/icomoon/style.css" rel="stylesheet">
+    </main>
+    <link href="/assets/icomoon/style.css" rel="stylesheet">
 <footer class="footer">
-    <span>&copy; 2022 <a href="https://tylerkennedy.co/">Tyler Kennedy</a></span>
+    <span>&copy; 2022 <a href="https://tylerkennedy.co">Tyler Kennedy</a></span>
 </footer>
 
 
@@ -272,7 +291,18 @@ August 22, 2022&nbsp;·&nbsp;6 min&nbsp;·&nbsp;Tyler Kennedy
     }
 
 </script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
+</script>
 </body>
 
 </html>
