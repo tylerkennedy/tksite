@@ -1,6 +1,6 @@
 ---
 title: "How to Build a Website for Your iOS App With Carrd"
-description: ""
+description: "Carrd is an easy to use website building tool. You can quickly create well-designed landing page for your iOS app without coding to link to from the App Store."
 date: 2022-08-22T20:42:24-04:00
 draft: false
 author: "Tyler Kennedy"
