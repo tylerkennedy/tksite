@@ -32,7 +32,13 @@ title = "Tyler Kennedy"
 content = "I build software (iOS apps, web apps, and chrome extensions) and share my experiences here on my blog."
 
 [[menu.main]]
+identifier = "Projects"
+name = "Projects"
+url = "/projects/"
+weight = 10
+
+[[menu.main]]
 identifier = "Contact"
 name = "Contact"
 url = "/contact/"
-weight = 10
+weight = 20

@@ -26,7 +26,7 @@
 
 .project > .project-inner > a > .icon {
   font-size: 1.5rem;
-  width: 50px;
+  min-width: 50px;
 }
 
 .cta-button {
@@ -63,4 +63,12 @@ background-image: linear-gradient(270deg, rgb(0, 102, 255) 0%, rgb(0, 137, 255) 
 
 #figment .cta-button {
   background-color: #0066ff;;
+}
+
+#no-more-threads {
+  background-image: linear-gradient(270deg, rgba(29, 160, 242, 0.7) 0%, rgb(29, 161, 242) 100%);;
+}
+
+#no-more-threads .cta-button {
+  background-color: #1DA1F2;;
 }
