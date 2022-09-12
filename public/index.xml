@@ -6,14 +6,23 @@
     <description>Recent content on Tyler Kennedy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 23 Aug 2022 00:14:58 -0400</lastBuildDate><atom:link href="https://tylerkennedy.co/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 05 Sep 2022 10:55:16 -0400</lastBuildDate><atom:link href="https://tylerkennedy.co/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How To Mute and Hide Threads on Twitter</title>
+      <link>https://tylerkennedy.co/blog/how-to-mute-and-hide-threads-on-twitter/</link>
+      <pubDate>Mon, 05 Sep 2022 10:55:16 -0400</pubDate>
+      
+      <guid>https://tylerkennedy.co/blog/how-to-mute-and-hide-threads-on-twitter/</guid>
+      <description>Twitter gives users the ability to mute content from being shown on their timeline. Learn how you can mute words to hide threads on Twitter.</description>
+    </item>
+    
     <item>
       <title>Contact</title>
       <link>https://tylerkennedy.co/contact/</link>
       <pubDate>Tue, 23 Aug 2022 00:14:58 -0400</pubDate>
       
       <guid>https://tylerkennedy.co/contact/</guid>
-      <description>.post-meta { display: none; } form { width: 100%; } input { width: 100%; padding: 10px; margin: 14px 0; padding-inline-start: var(--radius); overflow-x: hidden; border-radius: var(--radius); background: var(--code-bg); color: var(--primary); border: 1px solid var(--border); } textarea { width: 100%; height: 200px; padding: 10px; margin: 14px 0; padding-inline-start: var(--radius); border-radius: var(--radius); background: var(--code-bg); color: var(--primary); border: 1px solid var(--border); }  Send me a message to get in touch about any of my projects or hiring me to help build your next project</description>
+      <description>.post-meta { display: none; } form { width: 100%; } input { width: 100%; padding: 10px; margin: 14px 0; padding-inline-start: var(--radius); overflow-x: hidden; border-radius: var(--radius); background: var(--code-bg); color: var(--primary); border: 1px solid var(--border); } textarea { width: 100%; height: 200px; padding: 10px; margin: 14px 0; padding-inline-start: var(--radius); border-radius: var(--radius); background: var(--code-bg); color: var(--primary); border: 1px solid var(--border); }  Send me a message to hire me or get in touch about my projects</description>
     </item>
     
     <item>
@@ -22,8 +31,9 @@
       <pubDate>Tue, 23 Aug 2022 00:14:58 -0400</pubDate>
       
       <guid>https://tylerkennedy.co/projects/</guid>
-      <description>  .post-meta { display: none; }    Dont Text  Block spam texts on your iPhone with the Dont Text iOS app
-Check it out      Figment.so  Create a Website from any Figma Design
+      <description>  .post-meta { display: none; }    No More Threads - Chrome Extension  Mute and hide Twitter threads from your Twitter timeline
+Check it out      Dont Text - iOS App  Block spam text messages on your iPhone
+Check it out      Figment.so  Create and host a website from a Figma Design
 Check it out     </description>
     </item>
     
@@ -33,10 +43,7 @@ Check it out     </description>
       <pubDate>Mon, 22 Aug 2022 20:42:24 -0400</pubDate>
       
       <guid>https://tylerkennedy.co/blog/how-to-build-a-website-for-your-ios-app-with-carrd/</guid>
-      <description>Creating a website for your iOS app is an easy way to start promoting your app online. There are tons of ways you can use your website to promote your app.
-A website is also a great way to drive traffic to your App Store listing. This helps generate more traffic which leads to more revenue.
-More Traffic ➡️ More Downloads ➡️ More Sales 🤑
-Your website is even a great place to provide resources for your customers.</description>
+      <description>Carrd is an easy to use website building tool. You can quickly create well-designed landing page for your iOS app without coding to link to from the App Store.</description>
     </item>
     
   </channel>
