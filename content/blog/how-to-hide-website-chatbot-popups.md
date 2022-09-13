@@ -2,7 +2,7 @@
 title: "How to Hide Website Chatbot Popups"
 description: ""
 date: 2022-09-12T21:49:24-04:00
-draft: true
+draft: false
 author: "Tyler Kennedy"
 cover:
     image: "assets/images/blog-covers/hide-chatbots-banner.png"
