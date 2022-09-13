@@ -58,17 +58,25 @@ h2 {
 }
 
 #figment {
-background-image: linear-gradient(270deg, rgb(0, 102, 255) 0%, rgb(0, 137, 255) 100%);;
+background-image: linear-gradient(270deg, rgb(0, 102, 255) 0%, rgb(0, 137, 255) 100%);
 }
 
 #figment .cta-button {
-  background-color: #0066ff;;
+  background-color: #0066ff;
 }
 
 #no-more-threads {
-  background-image: linear-gradient(270deg, rgba(29, 160, 242, 0.7) 0%, rgb(29, 161, 242) 100%);;
+  background-image: linear-gradient(270deg, rgba(29, 160, 242, 0.7) 0%, rgb(29, 161, 242) 100%);
 }
 
 #no-more-threads .cta-button {
-  background-color: #1DA1F2;;
+  background-color: #1DA1F2;
+}
+
+#hide-chatbots {
+  background-image: linear-gradient(270deg, #0052D4 0%, #4364F7 50%, #6FB1FC 100%);
+}
+
+#hide-chatbots .cta-button {
+  background-color: #4368DF;
 }
