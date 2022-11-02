@@ -10,7 +10,7 @@
 }
 
 .project-inner {
-  background-color: white;
+  background-color: var(--theme);
   padding: 20px;
   border-radius: 8px;
 }
@@ -25,8 +25,9 @@
 }
 
 .project > .project-inner > a > .icon {
-  font-size: 1.5rem;
+  font-size: 2rem;
   min-width: 50px;
+  text-align: center;
 }
 
 .cta-button {
@@ -79,4 +80,16 @@ background-image: linear-gradient(270deg, rgb(0, 102, 255) 0%, rgb(0, 137, 255) 
 
 #hide-chatbots .cta-button {
   background-color: #4368DF;
+}
+
+#reviews-widget {
+  background-image: linear-gradient(270deg, #FF9000 0%, #FF9000 50%, #FF9000 100%);
+}
+
+#reviews-widget .cta-button {
+  background-color: #FF9000;
+}
+
+#reviews-widget .icon {
+  color: #FF9000;
 }
