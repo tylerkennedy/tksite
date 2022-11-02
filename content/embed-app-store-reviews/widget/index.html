@@ -1,0 +1,96 @@
+<html>
+  <head>
+    <title>App Store Reviews Widget</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link href="/assets/css/widget.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="/assets/js/iframeSizer.contentWindow.min.js"></script>
+  </head>
+  <body>
+    <div id="carousel">
+      <div class="testimonials">
+        <div class="scroller"></div>
+      </div>
+    </div>
+    <script async>
+      /*
+        - Expected url: http://tylerkennedy.co/embed-app-store-reviews/widget/?id=123&rating=5
+        - id: App Store ID that is unique for each app
+        - rating: Lowest rated reviews to include in carousel
+      */
+      const queryString = window.location.search;
+      let params = new URLSearchParams(queryString)
+      let id = parseInt(params.get("id"));
+      let rating = parseInt(params.get("rating"))
+
+      const testimonials = document.querySelector('.testimonials');
+      const scroller = testimonials.querySelector('.scroller');
+      
+      // Auto scroll on the carousel
+      setInterval(() => {
+        const itemWidth = testimonials.querySelector('.review').clientWidth;
+        scroller.scrollBy({left: itemWidth, top: 0, behavior: 'smooth'});
+      }, 4000); // in milliseconds
+
+      const fetchAppReviews = async (id, rating) => {
+        let reviews = [];
+
+        let appUrl = `https://itunes.apple.com/us/rss/customerreviews/id=${id}/sortBy=mostRecent/json`; 
+
+        await axios.get(appUrl)
+          .then(response => {
+            const entries = response.data.feed.entry;
+            entries.forEach((entry) => {
+              const review = {
+                rating: parseInt(entry['im:rating'].label),
+                title: entry.title.label,
+                content: entry.content.label
+              }
+              // Only include revies at the rating threshold
+              if (review.rating >= rating) {
+                createReviewCarouselItem(review);
+              }
+              reviews.push(review);
+            })
+          });
+        return reviews;
+      }
+
+      // Create a review in the carousel
+      const createReviewCarouselItem = (review) => {
+        const carousel = document.querySelector('.scroller');
+
+        let reviewDivElement = document.createElement('div');
+        reviewDivElement.className = 'review';
+
+        let starsRowDivElement = document.createElement('div');
+        starsRowDivElement.className = 'stars-row';
+
+        let i = 0;
+        
+        while (i < review.rating) {
+          let starElement = document.createElement('i');
+          starElement.className = 'star bx bxs-star'
+          starsRowDivElement.append(starElement);
+          i++;
+        }
+
+        let reviewTitleElement = document.createElement('h3');
+        reviewTitleElement.className = 'title';
+        reviewTitleElement.innerText = review.title;
+
+        let reviewContentElement = document.createElement('p');
+        reviewContentElement.className = 'content';
+        reviewContentElement.innerText = review.content;
+
+        reviewDivElement.append(starsRowDivElement);
+        reviewDivElement.append(reviewTitleElement);
+        reviewDivElement.append(reviewContentElement);
+
+        carousel.append(reviewDivElement);
+      }
+
+      let reviews = fetchAppReviews(id, rating);
+    </script>
+  </body>
+</html>
