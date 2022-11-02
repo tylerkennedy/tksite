@@ -124,3 +124,7 @@
 #embed-container {
   text-align: center;
 }
+
+#embed-container h4 {
+  margin-bottom: 0px;
+}
