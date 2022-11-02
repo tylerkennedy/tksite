@@ -1,0 +1,128 @@
+---
+title: "Embed App Store Reviews on Any Website"
+description: "Create an HTML carousel widget to display App Store reviews for your app on any website"
+draft: false
+ShowReadingTime: false
+disableShare: true
+date: 2022-11-01T00:14:58-04:00
+---
+<head>
+  <link href="/assets/css/embed.css" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<head>
+<script>
+
+  // Call this when focusing the input box to remove the error message and reset the copy container with the demo reviews carousel widget
+  function resetError() {
+    // Remove error class from form input
+    let inputForm = document.querySelector('.form-container > form > input');
+    inputForm.className = '';
+    inputForm.value = '';
+
+    // Enable button
+    document.querySelector('.form-container > form > button').disabled = false;
+
+    // Remove error message
+    if(document.querySelector('.form-container > span')) {
+      document.querySelector('.form-container > span').remove();
+    }
+
+    // Hide copy code container
+    document.querySelector('#copy-container').style.display = 'none';
+
+    // Show reviews carousel
+    document.querySelector('#embed-container').style.display = 'block';
+  }
+
+  // Copy the code from the textarea on button press
+  async function copyCode() {
+    return await navigator.clipboard.writeText(document.querySelector("#copy-container > textarea").value);
+  }
+
+  function extractIdFromAppStoreURL(appURL) {
+    return appURL.substring(appURL.lastIndexOf('/id') + 3);
+  }
+
+  // Verify that the App Store url given can be used to pull App Store reviews
+  async function checkUrlIsValid(id) {
+    let reviewsURL = `https://itunes.apple.com/us/rss/customerreviews/id=${id}/sortBy=mostRecent/json`; 
+
+    let isValid = await axios.get(reviewsURL)
+      .then(response => {
+        return response.status === 200 && response.data.feed.entry !== undefined;
+      })
+    return isValid;
+  }
+
+  // Show the error message for a bad url
+  function showError() {
+    // Add error css class to form
+    let inputForm = document.querySelector('.form-container > form > input');
+    inputForm.className = 'error';
+
+    // Disable button
+    let button = document.querySelector('.form-container > form > button');
+    button.disabled = true;
+
+    let formContainer = document.querySelector('.form-container');
+
+    // Create error message below input
+    let errorMessage = document.createElement('span');
+    errorMessage.innerText = 'Error: invalid App Store URL, the reviews for your app could not be loaded';
+    formContainer.append(errorMessage);
+  }
+
+  // Show the copy code box for a valid url
+  function showEmbedCode(id) {
+    document.querySelector('#embed-container').style.display = 'none';
+    document.querySelector('#copy-container').style.display = 'block';
+
+    // Esacped version of the code a user would paste into their website
+    document.querySelector("#copy-container > textarea").value = 
+    `    <script src="https://tylerkennedy.co/assets/js/iframeResizer.min.js">\x3C/script>
+    <iframe src="https://tylerkennedy.co/embed-app-store-reviews/widget/?id=${id}&rating=5" frameborder="0" width="100%"></iframe>
+    <script>iFrameResize({ log: true })\x3C/script>`;
+  }
+
+  // Call this when generate code button is pressed to either create copy code box or show error for invalid url
+  async function generateEmbedCode(event) {
+    let appURL = document.getElementById('appURL').value;
+
+    // User must provide input
+    if (appURL !== "") {
+      event.preventDefault(); // Prevent page refresh
+      appID = extractIdFromAppStoreURL(appURL);
+
+      let isUrlValid = await checkUrlIsValid(appID);
+      if (!isUrlValid) {
+        showError();
+      } else {
+        showEmbedCode(appID);
+      }
+    }
+  }
+</script>
+<!-- Default State -->
+<div id="generate-container" class="container">
+  <h1>Embed App Store Reviews on Any Website</h1>
+  <p>Create and display a carousel of your most recent 5 star app reviews</p>
+  <div class="form-container">
+    <form>
+        <input id="appURL" type="url" placeholder="Enter App Store URL" required autofocus onfocus="resetError()">
+      <button onclick="generateEmbedCode(event)">Generate Code</button>
+    </form>
+  </div>
+  <div id="embed-container">
+    <script src="/assets/js/iframeResizer.min.js"></script>
+    <iframe src="/embed-app-store-reviews/widget/?id=1540836811&rating=5" frameborder="0" width="100%"></iframe>
+    <script>iFrameResize({ log: true })</script>
+  </div>
+</div>
+
+<!-- Copy Code State -->
+<div id="copy-container" class="container">
+  <h3>Paste this code into your website</h3>
+  <textarea disabled></textarea>
+  <button onclick="copyCode()">Copy <i class='bx bxs-copy' ></i></button>
+</div>

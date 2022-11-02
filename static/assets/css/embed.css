@@ -1,0 +1,126 @@
+.post-meta {
+  display: none;
+}
+
+.post-title {
+  display: none;
+}
+
+.container {
+
+}
+
+#copy-container {
+  display: none;
+}
+
+#copy-container {
+  font-size: large !important;
+}
+
+#copy-container > h3 {
+  text-align: center;
+  margin-top: 16px;
+}
+
+#copy-container > textarea {
+  background: var(--code-bg);
+  border-radius: var(--radius);
+  padding: var(--gap);
+  overflow: hidden;
+  width: 100%;
+  resize: none;
+  min-height: 200px;
+}
+
+#copy-container > button {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  margin: 14px 0;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  font-weight: bold;
+  width: 100%;
+}
+
+.container > h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.container > p {
+  text-align: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-container > form {
+  width: 100%;
+  justify-self: center;
+  align-items: center;
+}
+
+.form-container > form > input {
+  width: 100%;
+  padding: 10px;
+  margin: 14px 0;
+  padding-inline-start: var(--radius);
+  overflow-x: hidden;
+  border-radius: var(--radius);
+  background: var(--code-bg);
+  color: var(--primary);
+  border: 1px solid var(--border);
+}
+
+.form-container > form > input.error {
+  border: red 2px solid;
+  background-color: #FFF5F5;
+}
+
+.form-container > span {
+  font-size: small;
+  margin-top: -10px;
+  margin-left: 2px;
+}
+
+.form-container > form > button {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  margin: 14px 0;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  font-weight: bold;
+  width: 100%;
+  min-width: 151px;
+}
+
+@media only screen and (min-width: 768px) {
+  .container > h1 {
+    font-size: 3.5rem;
+  }
+
+  .form-container > form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .form-container > form > button {
+    width: unset;
+  }
+
+  .form-container > form > input {
+    margin-right: 1rem;
+  }
+}
+
+#embed-container {
+  text-align: center;
+}
