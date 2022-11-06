@@ -18,3 +18,8 @@ p.share-heading {
   padding-right: 15px;
   font-weight: bold;
 }
+
+.post-content p {
+  font-weight: 400;
+  font-size: 20px;
+}
