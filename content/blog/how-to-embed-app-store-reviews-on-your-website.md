@@ -34,7 +34,7 @@ Since I could not find a tool to do this, I built my own.
 
 What I made is a tool to create an embeddable carousel of your app reviews that looks like this:
 
-<script src="https://tylerkennedy.co/assets/js/iframeResizer.min.js"></script>
+<script src="https://tylerkennedy.co/assets/js/iframeResizer.js"></script>
 <iframe src="https://tylerkennedy.co/embed-app-store-reviews/widget/?id=1540836811&rating=5" frameborder="0" width="100%"></iframe>
 <script>iFrameResize({ log: true })</script>
 
@@ -56,7 +56,7 @@ Now that you have the URL, copy it from the App Store and paste it into the tool
 
 This will generate a few lines of code that look like this:
 
-    <script src="https://tylerkennedy.co/assets/js/iframeResizer.min.js"></script>
+    <script src="https://tylerkennedy.co/assets/js/iframeResizer.js"></script>
     <iframe src="https://tylerkennedy.co/embed-app-store-reviews/widget/?id=1540836811&rating=5" frameborder="0" width="100%"></iframe>
     <script>iFrameResize({ log: true })</script>
 
