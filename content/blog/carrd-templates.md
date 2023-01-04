@@ -1,5 +1,5 @@
 ---
-title: "Carrd.co Templates For $1 - 2022"
+title: "Carrd.co Templates For $1 - 2023"
 description: "Create your next website using Carrd.co. Grab a template to get a head start and customize it by adding your own content and modifying the design."
 date: 2022-12-22T18:33:55-05:00
 draft: false
