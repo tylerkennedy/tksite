@@ -10,26 +10,6 @@ cover:
     relative: false 
 ---
 
-<style>
-  .buy-button, .preview-button {
-    border-radius: 12px;
-    box-shadow: unset !important;
-    padding: 12px 16px;
-    height: 40px;
-    margin-right: 4px;
-  }
-
-  .preview-button {
-    text-decoration: underline;
-  }
-
-  .buy-button {
-    background-color: #000;
-    color: #FFF;
-    font-weight: 700;
-  }
-</style>
-
 If you're looking for a free and easy way to build a website, use [Carrd.co](https://try.carrd.co/1zf1rsmd). 
 
 Carrd.co is a simple yet powerful website builder that allows you to design and create a professional website in minutes. I've built a collection of Carrd.co templates that you can use to build your next website. 
@@ -102,3 +82,22 @@ Yes. After you transfer any template to your Carrd.co account, you can customize
 
 If you cannot find a template that you like and need a custom one, [contact me](/contact) and I'll build one for you.
 
+<style>
+  .buy-button, .preview-button {
+    border-radius: 12px;
+    box-shadow: unset !important;
+    padding: 12px 16px;
+    height: 40px;
+    margin-right: 4px;
+  }
+
+  .preview-button {
+    text-decoration: underline;
+  }
+
+  .buy-button {
+    background-color: #000;
+    color: #FFF;
+    font-weight: 700;
+  }
+</style>
